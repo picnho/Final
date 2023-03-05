@@ -6,4 +6,5 @@ import Capa_Datos.RealG;
 
 public class DatosT {
     //hola
+    //pincho es gay
 }
