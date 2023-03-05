@@ -14,6 +14,7 @@ public class Registro extends javax.swing.JFrame {
      * Creates new form Registro
      */
     public Registro() {
+        this.setSize(960,500);
         initComponents();
     }
 
