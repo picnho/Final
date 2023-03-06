@@ -11,7 +11,12 @@ public class DatosT {
     private String Direccion; 
     
     
- 
+ public String AgregarCliente()
+    {
+        conexion objmod=new conexion();
+        String cad  ="insert into cliente value(´"+this.getNombre()+"´,´"+this.getCedula()+"´,´"+this.getCelular()+"´,´"+this.getDireccion()+"´)";
+        return objmod.Ejecutar(cad);
+    }
 
     public String getNombre() {
         return Nombre;
