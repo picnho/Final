@@ -70,6 +70,11 @@ public class Main extends javax.swing.JFrame {
         jComboBox1.setBackground(new java.awt.Color(108, 49, 69));
         jComboBox1.setForeground(new java.awt.Color(247, 170, 88));
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione una marca", "Aston Martin ", "BMW", "Chevrolet", "Dodge", "Ford", "Honda", "Lamborghini", "Mazda", "Mercedes-AMG", "Mercedes-Benz", "Mitsubishi ", "Nissan", "Pontiac", "Porshce", "Renault", "Subaru", "Toyota", "Volkswagen" }));
+        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox1ActionPerformed(evt);
+            }
+        });
 
         Registrarse.setBackground(new java.awt.Color(108, 49, 69));
         Registrarse.setForeground(new java.awt.Color(247, 170, 88));
@@ -206,6 +211,10 @@ public class Main extends javax.swing.JFrame {
             Consultar consultarFrame=new Consultar();
             consultarFrame.setVisible(true);
     }//GEN-LAST:event_jToggleButton1ActionPerformed
+
+    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox1ActionPerformed
 
     /**
      * @param args the command line arguments

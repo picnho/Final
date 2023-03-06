@@ -4,7 +4,7 @@ import java.sql.*;
 import Capa_Datos.RealG;
 
 
-public class DatosT {
+public class Clientes {
     private String Nombre;
     private int Cedula;
     private int Celular; 
@@ -18,17 +18,17 @@ public class DatosT {
         String cad  ="insert into cliente value(´"+this.getNombre()+"´,´"+this.getCedula()+"´,´"+this.getCelular()+"´,´"+this.getDireccion()+"´)";
         return objmod.Ejecutar(cad);
     }
- public ArrayList<DatosT> listaClientes()
+ public ArrayList<Clientes> listaClientes()
     {
         ArrayList lista2=new ArrayList();
         try
         {
            RealG objmod=new RealG();
            ResultSet tabla=objmod.Listar("select * from cliente");
-           DatosT objcli;
+           Clientes objcli;
            while(tabla.next())
            {
-               objcli=new DatosT();
+               objcli=new Clientes();
                objcli.setNombre(tabla.getString("Nombre"));
                objcli.setCedula(tabla.getInt("Cedula"));
                objcli.setCelular(tabla.getInt("Celular"));
@@ -42,6 +42,8 @@ public class DatosT {
         }
         return lista2;
     }
+ 
+    
  
     public String getNombre() {
         return Nombre;
