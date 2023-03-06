@@ -5,6 +5,7 @@
 package Capa_Presentacion;
 
 import Capa_Negocio.Clientes;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -163,6 +164,8 @@ public class Registro extends javax.swing.JFrame {
         objcli.setCedula(Integer.parseInt(this.Cedula.getText()));
         objcli.setCelular(Integer.parseInt(this.Celular.getText()));
         objcli.setDireccion(this.Direccion.getText());
+        JOptionPane.showMessageDialog(null, objcli.AgregarCliente());
+        
     }//GEN-LAST:event_AgregarActionPerformed
 
     /**
