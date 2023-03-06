@@ -4,6 +4,8 @@
  */
 package Capa_Presentacion;
 
+import Capa_Negocio.Clientes;
+
 /**
  *
  * @author sebas
@@ -50,6 +52,11 @@ public class Registro extends javax.swing.JFrame {
         });
 
         Agregar.setText("agregar");
+        Agregar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AgregarActionPerformed(evt);
+            }
+        });
 
         Cancelar.setText("cancelar");
         Cancelar.addActionListener(new java.awt.event.ActionListener() {
@@ -149,6 +156,14 @@ public class Registro extends javax.swing.JFrame {
         Main mainFrame = new Main();
         mainFrame.setVisible(true);
     }//GEN-LAST:event_CancelarActionPerformed
+
+    private void AgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AgregarActionPerformed
+        Clientes objcli=new Clientes();
+        objcli.setNombre(this.Nombre.getText());
+        objcli.setCedula(Integer.parseInt(this.Cedula.getText()));
+        objcli.setCelular(Integer.parseInt(this.Celular.getText()));
+        objcli.setDireccion(this.Direccion.getText());
+    }//GEN-LAST:event_AgregarActionPerformed
 
     /**
      * @param args the command line arguments
