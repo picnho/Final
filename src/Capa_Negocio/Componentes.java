@@ -11,7 +11,7 @@ public class Componentes
     public String EliminarArticulo(){
         
         RealG objmod=new RealG();
-        String cad="delete from mod where componente='"+this.getComponente()+"'";
+        String cad="delete from mods where componente='"+this.getComponente()+"'";
         return objmod.Ejecutar(cad);
             
     }
@@ -27,8 +27,8 @@ public class Componentes
             while(tabla.next())
                 {
                     objart = new Componentes();
-                    objart.setComponente(tabla.getString("componente"));
-                    objart.setPrecio(tabla.getInt("precio"));
+                    objart.setComponente(tabla.getString("Componente"));
+                    objart.setPrecio(tabla.getInt("Precio"));
                     lista4.add(objart);
                 }
         }
