@@ -17,7 +17,31 @@ public class DatosT {
         String cad  ="insert into cliente value(´"+this.getNombre()+"´,´"+this.getCedula()+"´,´"+this.getCelular()+"´,´"+this.getDireccion()+"´)";
         return objmod.Ejecutar(cad);
     }
-
+ public ArrayList<DatosT> listaClientes()
+    {
+        ArrayList lista2=new ArrayList();
+        try
+        {
+           RealG objmod=new RealG();
+           ResultSet tabla=objmod.Listar("select * from cliente");
+           DatosT objcli;
+           while(tabla.next())
+           {
+               objcli=new DatosT();
+               objcli.setNombre(tabla.getString("Nombre"));
+               objcli.setCedula(tabla.getInt("Cedula"));
+               objcli.setCelular(tabla.getInt("Celular"));
+               objcli.setDireccion(tabla.getString("Direccion"));
+               lista2.add(objcli);
+           }
+        }
+        catch(SQLException e)
+        {
+            javax.swing.JOptionPane.showMessageDialog(null,e.getMessage());
+        }
+        return lista2;
+    }
+ 
     public String getNombre() {
         return Nombre;
     }
