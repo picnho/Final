@@ -1,13 +1,50 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Capa_Negocio;
+import java.util.ArrayList;
+import java.sql.*;
+import Capa_Datos.RealG;
 
-/**
- *
- * @author danim
- */
-public class Componentes {
+public class Componentes 
+{
+    private String componente;
+    private int precio;
     
+    
+    public ArrayList<Componentes> ListaArticulos()
+    {
+        ArrayList lista4 = new ArrayList();
+        try
+        {
+            RealG objmod = new RealG();
+            ResultSet tabla = objmod.Listar("select * from mods");
+            Componentes objart;
+            while(tabla.next())
+                {
+                    objart = new Componentes();
+                    objart.setComponente(tabla.getString("componente"));
+                    objart.setPrecio(tabla.getInt("precio"));
+                    lista4.add(objart);
+                }
+        }
+        catch(SQLException e)
+            {
+                javax.swing.JOptionPane.showMessageDialog(null,e.getMessage());
+            }
+        return lista4;
+    }
+
+    public String getComponente() {
+        return componente;
+    }
+
+    public void setComponente(String componente) {
+        this.componente = componente;
+    }
+
+    public int getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(int precio) {
+        this.precio = precio;
+    }
 }
