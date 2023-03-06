@@ -11,6 +11,7 @@ public class DatosT {
     private String Direccion; 
     
     
+    
  public String AgregarCliente()
     {
         RealG objmod=new RealG();
