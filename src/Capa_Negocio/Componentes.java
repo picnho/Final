@@ -8,7 +8,14 @@ public class Componentes
     private String componente;
     private int precio;
     
-    
+    public String EliminarArticulo(){
+        
+        RealG objmod=new RealG();
+        String cad="delete from mod where componente='"+this.getComponente()+"'";
+        return objmod.Ejecutar(cad);
+            
+    }
+            
     public ArrayList<Componentes> ListaArticulos()
     {
         ArrayList lista4 = new ArrayList();
