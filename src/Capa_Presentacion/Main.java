@@ -4,6 +4,8 @@
  */
 package Capa_Presentacion;
 
+import java.awt.Color;
+
 /**
  *
  * @author danim
@@ -16,6 +18,7 @@ public class Main extends javax.swing.JFrame {
     public Main() {
         initComponents();
         this.setSize(960,500);
+        
     }
 
     /**
@@ -27,110 +30,257 @@ public class Main extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jSeparator1 = new javax.swing.JSeparator();
-        jLabel2 = new javax.swing.JLabel();
         logo = new javax.swing.JLabel();
-        Nombre = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
+        jTabbedPane1 = new javax.swing.JTabbedPane();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
         Identificacion = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        Nombre = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
         Ingresar = new javax.swing.JToggleButton();
         Registrarse = new javax.swing.JToggleButton();
         Salir = new javax.swing.JToggleButton();
+        jToggleButton1 = new javax.swing.JToggleButton();
+        jPanel1 = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        Salir1 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTable2 = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(123, 60, 73));
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
+        jTabbedPane1.setBackground(new java.awt.Color(125, 51, 84));
+        jTabbedPane1.setForeground(new java.awt.Color(247, 170, 88));
+
+        jPanel2.setBackground(new java.awt.Color(97, 53, 74));
+
+        jLabel2.setForeground(new java.awt.Color(247, 167, 89));
         jLabel2.setText("Nombre:");
 
-        logo.setIcon(new javax.swing.ImageIcon("C:\\Users\\danim\\OneDrive\\Documentos\\Academico\\Tercer Semestre\\Paradigmas de programacion\\a.png")); // NOI18N
+        Identificacion.setBackground(new java.awt.Color(108, 49, 69));
 
+        jLabel1.setForeground(new java.awt.Color(247, 167, 89));
         jLabel1.setText("Cedula");
 
-        Identificacion.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                IdentificacionActionPerformed(evt);
-            }
-        });
+        Nombre.setBackground(new java.awt.Color(108, 49, 69));
 
+        jLabel3.setForeground(new java.awt.Color(247, 167, 89));
+        jLabel3.setText("Marca:");
+
+        jComboBox1.setBackground(new java.awt.Color(108, 49, 69));
+        jComboBox1.setForeground(new java.awt.Color(247, 170, 88));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione una marca", "Aston Martin ", "BMW", "Chevrolet", "Dodge", "Ford", "Honda", "Lamborghini", "Mazda", "Mercedes-AMG", "Mercedes-Benz", "Mitsubishi ", "Nissan", "Pontiac", "Porshce", "Renault", "Subaru", "Toyota", "Volkswagen" }));
+
+        Ingresar.setBackground(new java.awt.Color(108, 49, 69));
+        Ingresar.setForeground(new java.awt.Color(247, 170, 88));
         Ingresar.setText("Ingresar");
 
+        Registrarse.setBackground(new java.awt.Color(108, 49, 69));
+        Registrarse.setForeground(new java.awt.Color(247, 170, 88));
         Registrarse.setText("Registrarse");
-        Registrarse.addActionListener(new java.awt.event.ActionListener() {
+
+        Salir.setBackground(new java.awt.Color(108, 49, 69));
+        Salir.setForeground(new java.awt.Color(247, 170, 88));
+        Salir.setText("Salir");
+
+        jToggleButton1.setBackground(new java.awt.Color(108, 49, 69));
+        jToggleButton1.setForeground(new java.awt.Color(247, 170, 88));
+        jToggleButton1.setText("Consultar");
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Ingresar)
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(jLabel3)
+                        .addComponent(jLabel2))
+                    .addComponent(jLabel1))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Identificacion, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(Registrarse)
+                        .addGap(18, 18, 18)
+                        .addComponent(Salir)
+                        .addGap(18, 18, 18)
+                        .addComponent(jToggleButton1))
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(Nombre, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jComboBox1, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addContainerGap(462, Short.MAX_VALUE))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(40, 40, 40)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(Nombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(67, 67, 67)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(Identificacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(62, 62, 62)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel3))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 197, Short.MAX_VALUE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Ingresar)
+                    .addComponent(Registrarse)
+                    .addComponent(Salir)
+                    .addComponent(jToggleButton1))
+                .addGap(18, 18, 18))
+        );
+
+        jTabbedPane1.addTab("inicio", jPanel2);
+
+        jPanel1.setBackground(new java.awt.Color(97, 53, 74));
+
+        jTable1.setBackground(new java.awt.Color(108, 49, 69));
+        jTable1.setForeground(new java.awt.Color(247, 170, 88));
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null}
+            },
+            new String [] {
+                "piezas", "valor "
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.Double.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, true
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jTable1.setGridColor(new java.awt.Color(247, 170, 88));
+        jTable1.setSelectionBackground(new java.awt.Color(108, 49, 69));
+        jTable1.setSelectionForeground(new java.awt.Color(247, 170, 88));
+        jScrollPane1.setViewportView(jTable1);
+
+        Salir1.setBackground(new java.awt.Color(108, 49, 69));
+        Salir1.setForeground(new java.awt.Color(247, 170, 88));
+        Salir1.setText("salir ");
+
+        jButton1.setBackground(new java.awt.Color(108, 49, 69));
+        jButton1.setForeground(new java.awt.Color(247, 170, 88));
+        jButton1.setText("pagar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                RegistrarseActionPerformed(evt);
+                jButton1ActionPerformed(evt);
             }
         });
 
-        Salir.setText("Salir");
-        Salir.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SalirActionPerformed(evt);
+        jTable2.setBackground(new java.awt.Color(108, 49, 69));
+        jTable2.setForeground(new java.awt.Color(247, 170, 88));
+        jTable2.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null}
+            },
+            new String [] {
+                "piezas", "valor ", "valor total "
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.Double.class, java.lang.Double.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, true, true
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
             }
         });
+        jTable2.setSelectionBackground(new java.awt.Color(108, 49, 69));
+        jTable2.setSelectionForeground(new java.awt.Color(247, 170, 88));
+        jScrollPane2.setViewportView(jTable2);
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(60, 60, 60)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jButton1)
+                        .addGap(134, 134, 134)
+                        .addComponent(Salir1)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 108, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(90, 90, 90))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap(92, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(43, 43, 43)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Salir1)
+                    .addComponent(jButton1))
+                .addGap(40, 40, 40))
+        );
+
+        jTabbedPane1.addTab("Precios", jPanel1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(50, 50, 50)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 85, Short.MAX_VALUE)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(51, 51, 51)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(Nombre, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
-                            .addComponent(Identificacion)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(Ingresar)
-                        .addGap(40, 40, 40)
-                        .addComponent(Registrarse)
-                        .addGap(40, 40, 40)
-                        .addComponent(Salir)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 115, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(379, 379, 379)
                 .addComponent(logo)
-                .addGap(52, 52, 52))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jTabbedPane1)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(21, 21, 21)
-                .addComponent(logo)
-                .addContainerGap(45, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(149, 149, 149)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(Nombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(Identificacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Ingresar)
-                    .addComponent(Registrarse)
-                    .addComponent(Salir))
-                .addGap(71, 71, 71))
+                .addComponent(jTabbedPane1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(logo))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void IdentificacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IdentificacionActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_IdentificacionActionPerformed
-
-    private void RegistrarseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegistrarseActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_RegistrarseActionPerformed
-
-    private void SalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SalirActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_SalirActionPerformed
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -176,9 +326,20 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JTextField Nombre;
     private javax.swing.JToggleButton Registrarse;
     private javax.swing.JToggleButton Salir;
+    private javax.swing.JButton Salir1;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JTable jTable1;
+    private javax.swing.JTable jTable2;
+    private javax.swing.JToggleButton jToggleButton1;
     private javax.swing.JLabel logo;
     // End of variables declaration//GEN-END:variables
 }
