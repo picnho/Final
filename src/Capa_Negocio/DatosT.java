@@ -13,7 +13,7 @@ public class DatosT {
     
  public String AgregarCliente()
     {
-        conexion objmod=new conexion();
+        RealG objmod=new RealG();
         String cad  ="insert into cliente value(´"+this.getNombre()+"´,´"+this.getCedula()+"´,´"+this.getCelular()+"´,´"+this.getDireccion()+"´)";
         return objmod.Ejecutar(cad);
     }
