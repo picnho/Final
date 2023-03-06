@@ -33,13 +33,6 @@ public class Main extends javax.swing.JFrame {
 
         logo = new javax.swing.JLabel();
         jTabbedPane1 = new javax.swing.JTabbedPane();
-        jPanel1 = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
-        Salir1 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        jTable2 = new javax.swing.JTable();
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         Identificacion = new javax.swing.JTextField();
@@ -47,7 +40,6 @@ public class Main extends javax.swing.JFrame {
         Nombre = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         jComboBox1 = new javax.swing.JComboBox<>();
-        Ingresar = new javax.swing.JToggleButton();
         Registrarse = new javax.swing.JToggleButton();
         Salir = new javax.swing.JToggleButton();
         jToggleButton1 = new javax.swing.JToggleButton();
@@ -59,123 +51,6 @@ public class Main extends javax.swing.JFrame {
 
         jTabbedPane1.setBackground(new java.awt.Color(125, 51, 84));
         jTabbedPane1.setForeground(new java.awt.Color(247, 170, 88));
-
-        jPanel1.setBackground(new java.awt.Color(97, 53, 74));
-
-        jTable1.setBackground(new java.awt.Color(108, 49, 69));
-        jTable1.setForeground(new java.awt.Color(247, 170, 88));
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null}
-            },
-            new String [] {
-                "piezas", "valor "
-            }
-        ) {
-            Class[] types = new Class [] {
-                java.lang.String.class, java.lang.Double.class
-            };
-            boolean[] canEdit = new boolean [] {
-                false, true
-            };
-
-            public Class getColumnClass(int columnIndex) {
-                return types [columnIndex];
-            }
-
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
-            }
-        });
-        jTable1.setGridColor(new java.awt.Color(247, 170, 88));
-        jTable1.setSelectionBackground(new java.awt.Color(108, 49, 69));
-        jTable1.setSelectionForeground(new java.awt.Color(247, 170, 88));
-        jScrollPane1.setViewportView(jTable1);
-
-        Salir1.setBackground(new java.awt.Color(108, 49, 69));
-        Salir1.setForeground(new java.awt.Color(247, 170, 88));
-        Salir1.setText("salir ");
-        Salir1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Salir1ActionPerformed(evt);
-            }
-        });
-
-        jButton1.setBackground(new java.awt.Color(108, 49, 69));
-        jButton1.setForeground(new java.awt.Color(247, 170, 88));
-        jButton1.setText("pagar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-
-        jTable2.setBackground(new java.awt.Color(108, 49, 69));
-        jTable2.setForeground(new java.awt.Color(247, 170, 88));
-        jTable2.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null}
-            },
-            new String [] {
-                "piezas", "valor ", "valor total "
-            }
-        ) {
-            Class[] types = new Class [] {
-                java.lang.String.class, java.lang.Double.class, java.lang.Double.class
-            };
-            boolean[] canEdit = new boolean [] {
-                false, true, true
-            };
-
-            public Class getColumnClass(int columnIndex) {
-                return types [columnIndex];
-            }
-
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
-            }
-        });
-        jTable2.setSelectionBackground(new java.awt.Color(108, 49, 69));
-        jTable2.setSelectionForeground(new java.awt.Color(247, 170, 88));
-        jScrollPane2.setViewportView(jTable2);
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(60, 60, 60)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jButton1)
-                        .addGap(134, 134, 134)
-                        .addComponent(Salir1)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 105, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(90, 90, 90))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap(112, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(43, 43, 43)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Salir1)
-                    .addComponent(jButton1))
-                .addGap(40, 40, 40))
-        );
-
-        jTabbedPane1.addTab("Precios", jPanel1);
 
         jPanel2.setBackground(new java.awt.Color(97, 53, 74));
 
@@ -196,13 +71,14 @@ public class Main extends javax.swing.JFrame {
         jComboBox1.setForeground(new java.awt.Color(247, 170, 88));
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione una marca", "Aston Martin ", "BMW", "Chevrolet", "Dodge", "Ford", "Honda", "Lamborghini", "Mazda", "Mercedes-AMG", "Mercedes-Benz", "Mitsubishi ", "Nissan", "Pontiac", "Porshce", "Renault", "Subaru", "Toyota", "Volkswagen" }));
 
-        Ingresar.setBackground(new java.awt.Color(108, 49, 69));
-        Ingresar.setForeground(new java.awt.Color(247, 170, 88));
-        Ingresar.setText("Ingresar");
-
         Registrarse.setBackground(new java.awt.Color(108, 49, 69));
         Registrarse.setForeground(new java.awt.Color(247, 170, 88));
         Registrarse.setText("Registrarse");
+        Registrarse.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RegistrarseActionPerformed(evt);
+            }
+        });
 
         Salir.setBackground(new java.awt.Color(108, 49, 69));
         Salir.setForeground(new java.awt.Color(247, 170, 88));
@@ -216,6 +92,11 @@ public class Main extends javax.swing.JFrame {
         jToggleButton1.setBackground(new java.awt.Color(108, 49, 69));
         jToggleButton1.setForeground(new java.awt.Color(247, 170, 88));
         jToggleButton1.setText("Consultar");
+        jToggleButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jToggleButton1ActionPerformed(evt);
+            }
+        });
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Capa_Presentacion/a.png"))); // NOI18N
 
@@ -238,14 +119,13 @@ public class Main extends javax.swing.JFrame {
                             .addComponent(Identificacion, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(16, 16, 16)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(Ingresar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(Salir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(Registrarse, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jToggleButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 96, Short.MAX_VALUE)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Registrarse)
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addComponent(Salir, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jToggleButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 95, Short.MAX_VALUE)
                 .addComponent(jLabel4)
                 .addGap(18, 18, 18))
         );
@@ -267,9 +147,7 @@ public class Main extends javax.swing.JFrame {
                             .addComponent(jLabel3)
                             .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(80, 80, 80)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(Ingresar)
-                            .addComponent(Registrarse))
+                        .addComponent(Registrarse)
                         .addGap(18, 18, 18)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(Salir)
@@ -306,10 +184,6 @@ public class Main extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
-
     private void SalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SalirActionPerformed
         int r = JOptionPane.showConfirmDialog(null,"Esta seguro?");
        if(r == 0)
@@ -318,13 +192,20 @@ public class Main extends javax.swing.JFrame {
        }
     }//GEN-LAST:event_SalirActionPerformed
 
-    private void Salir1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Salir1ActionPerformed
-        int r = JOptionPane.showConfirmDialog(null,"Esta seguro?");
-       if(r == 0)
-       {
-           System.exit(0);
-       }
-    }//GEN-LAST:event_Salir1ActionPerformed
+    private void RegistrarseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegistrarseActionPerformed
+            // TODO add your handling code here:
+            dispose();
+            Registro registroFrame= new Registro();
+            registroFrame.setVisible(true);
+        
+    }//GEN-LAST:event_RegistrarseActionPerformed
+
+    private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
+        // TODO add your handling code here:
+            dispose();
+            Consultar consultarFrame=new Consultar();
+            consultarFrame.setVisible(true);
+    }//GEN-LAST:event_jToggleButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -366,24 +247,16 @@ public class Main extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField Identificacion;
-    private javax.swing.JToggleButton Ingresar;
     private javax.swing.JTextField Nombre;
     private javax.swing.JToggleButton Registrarse;
     private javax.swing.JToggleButton Salir;
-    private javax.swing.JButton Salir1;
-    private javax.swing.JButton jButton1;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTabbedPane jTabbedPane1;
-    private javax.swing.JTable jTable1;
-    private javax.swing.JTable jTable2;
     private javax.swing.JToggleButton jToggleButton1;
     private javax.swing.JLabel logo;
     // End of variables declaration//GEN-END:variables
