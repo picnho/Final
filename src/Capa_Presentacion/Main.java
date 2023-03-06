@@ -5,6 +5,7 @@
 package Capa_Presentacion;
 
 import java.awt.Color;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -17,7 +18,7 @@ public class Main extends javax.swing.JFrame {
      */
     public Main() {
         initComponents();
-        this.setSize(960,500);
+        this.setSize(823,530);
         
     }
 
@@ -32,6 +33,13 @@ public class Main extends javax.swing.JFrame {
 
         logo = new javax.swing.JLabel();
         jTabbedPane1 = new javax.swing.JTabbedPane();
+        jPanel1 = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        Salir1 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTable2 = new javax.swing.JTable();
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         Identificacion = new javax.swing.JTextField();
@@ -43,13 +51,7 @@ public class Main extends javax.swing.JFrame {
         Registrarse = new javax.swing.JToggleButton();
         Salir = new javax.swing.JToggleButton();
         jToggleButton1 = new javax.swing.JToggleButton();
-        jPanel1 = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
-        Salir1 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        jTable2 = new javax.swing.JTable();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(123, 60, 73));
@@ -57,93 +59,6 @@ public class Main extends javax.swing.JFrame {
 
         jTabbedPane1.setBackground(new java.awt.Color(125, 51, 84));
         jTabbedPane1.setForeground(new java.awt.Color(247, 170, 88));
-
-        jPanel2.setBackground(new java.awt.Color(97, 53, 74));
-
-        jLabel2.setForeground(new java.awt.Color(247, 167, 89));
-        jLabel2.setText("Nombre:");
-
-        Identificacion.setBackground(new java.awt.Color(108, 49, 69));
-
-        jLabel1.setForeground(new java.awt.Color(247, 167, 89));
-        jLabel1.setText("Cedula");
-
-        Nombre.setBackground(new java.awt.Color(108, 49, 69));
-
-        jLabel3.setForeground(new java.awt.Color(247, 167, 89));
-        jLabel3.setText("Marca:");
-
-        jComboBox1.setBackground(new java.awt.Color(108, 49, 69));
-        jComboBox1.setForeground(new java.awt.Color(247, 170, 88));
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione una marca", "Aston Martin ", "BMW", "Chevrolet", "Dodge", "Ford", "Honda", "Lamborghini", "Mazda", "Mercedes-AMG", "Mercedes-Benz", "Mitsubishi ", "Nissan", "Pontiac", "Porshce", "Renault", "Subaru", "Toyota", "Volkswagen" }));
-
-        Ingresar.setBackground(new java.awt.Color(108, 49, 69));
-        Ingresar.setForeground(new java.awt.Color(247, 170, 88));
-        Ingresar.setText("Ingresar");
-
-        Registrarse.setBackground(new java.awt.Color(108, 49, 69));
-        Registrarse.setForeground(new java.awt.Color(247, 170, 88));
-        Registrarse.setText("Registrarse");
-
-        Salir.setBackground(new java.awt.Color(108, 49, 69));
-        Salir.setForeground(new java.awt.Color(247, 170, 88));
-        Salir.setText("Salir");
-
-        jToggleButton1.setBackground(new java.awt.Color(108, 49, 69));
-        jToggleButton1.setForeground(new java.awt.Color(247, 170, 88));
-        jToggleButton1.setText("Consultar");
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Ingresar)
-                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(jLabel3)
-                        .addComponent(jLabel2))
-                    .addComponent(jLabel1))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Identificacion, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(Registrarse)
-                        .addGap(18, 18, 18)
-                        .addComponent(Salir)
-                        .addGap(18, 18, 18)
-                        .addComponent(jToggleButton1))
-                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(Nombre, javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jComboBox1, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addContainerGap(462, Short.MAX_VALUE))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(40, 40, 40)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(Nombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(67, 67, 67)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(Identificacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(62, 62, 62)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 197, Short.MAX_VALUE)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Ingresar)
-                    .addComponent(Registrarse)
-                    .addComponent(Salir)
-                    .addComponent(jToggleButton1))
-                .addGap(18, 18, 18))
-        );
-
-        jTabbedPane1.addTab("inicio", jPanel2);
 
         jPanel1.setBackground(new java.awt.Color(97, 53, 74));
 
@@ -183,6 +98,11 @@ public class Main extends javax.swing.JFrame {
         Salir1.setBackground(new java.awt.Color(108, 49, 69));
         Salir1.setForeground(new java.awt.Color(247, 170, 88));
         Salir1.setText("salir ");
+        Salir1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Salir1ActionPerformed(evt);
+            }
+        });
 
         jButton1.setBackground(new java.awt.Color(108, 49, 69));
         jButton1.setForeground(new java.awt.Color(247, 170, 88));
@@ -237,14 +157,14 @@ public class Main extends javax.swing.JFrame {
                         .addComponent(jButton1)
                         .addGap(134, 134, 134)
                         .addComponent(Salir1)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 108, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 105, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(90, 90, 90))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap(92, Short.MAX_VALUE)
+                .addContainerGap(112, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -257,6 +177,111 @@ public class Main extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Precios", jPanel1);
 
+        jPanel2.setBackground(new java.awt.Color(97, 53, 74));
+
+        jLabel2.setForeground(new java.awt.Color(247, 167, 89));
+        jLabel2.setText("Nombre:");
+
+        Identificacion.setBackground(new java.awt.Color(108, 49, 69));
+
+        jLabel1.setForeground(new java.awt.Color(247, 167, 89));
+        jLabel1.setText("Cedula");
+
+        Nombre.setBackground(new java.awt.Color(108, 49, 69));
+
+        jLabel3.setForeground(new java.awt.Color(247, 167, 89));
+        jLabel3.setText("Marca:");
+
+        jComboBox1.setBackground(new java.awt.Color(108, 49, 69));
+        jComboBox1.setForeground(new java.awt.Color(247, 170, 88));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione una marca", "Aston Martin ", "BMW", "Chevrolet", "Dodge", "Ford", "Honda", "Lamborghini", "Mazda", "Mercedes-AMG", "Mercedes-Benz", "Mitsubishi ", "Nissan", "Pontiac", "Porshce", "Renault", "Subaru", "Toyota", "Volkswagen" }));
+
+        Ingresar.setBackground(new java.awt.Color(108, 49, 69));
+        Ingresar.setForeground(new java.awt.Color(247, 170, 88));
+        Ingresar.setText("Ingresar");
+
+        Registrarse.setBackground(new java.awt.Color(108, 49, 69));
+        Registrarse.setForeground(new java.awt.Color(247, 170, 88));
+        Registrarse.setText("Registrarse");
+
+        Salir.setBackground(new java.awt.Color(108, 49, 69));
+        Salir.setForeground(new java.awt.Color(247, 170, 88));
+        Salir.setText("Salir");
+        Salir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SalirActionPerformed(evt);
+            }
+        });
+
+        jToggleButton1.setBackground(new java.awt.Color(108, 49, 69));
+        jToggleButton1.setForeground(new java.awt.Color(247, 170, 88));
+        jToggleButton1.setText("Consultar");
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Capa_Presentacion/a.png"))); // NOI18N
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel2)
+                            .addComponent(jLabel1)
+                            .addComponent(jLabel3))
+                        .addGap(44, 44, 44)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(Nombre, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jComboBox1, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Identificacion, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(16, 16, 16)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(Ingresar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Salir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(Registrarse, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jToggleButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 96, Short.MAX_VALUE)
+                .addComponent(jLabel4)
+                .addGap(18, 18, 18))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(40, 40, 40)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel2)
+                            .addComponent(Nombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(34, 34, 34)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel1)
+                            .addComponent(Identificacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(31, 31, 31)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel3)
+                            .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(80, 80, 80)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Ingresar)
+                            .addComponent(Registrarse))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Salir)
+                            .addComponent(jToggleButton1)))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(19, 19, 19)
+                        .addComponent(jLabel4)))
+                .addContainerGap(40, Short.MAX_VALUE))
+        );
+
+        jTabbedPane1.addTab("inicio", jPanel2);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -264,8 +289,11 @@ public class Main extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(379, 379, 379)
                 .addComponent(logo)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addComponent(jTabbedPane1)
+                .addContainerGap(444, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 811, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -281,6 +309,22 @@ public class Main extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void SalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SalirActionPerformed
+        int r = JOptionPane.showConfirmDialog(null,"Esta seguro?");
+       if(r == 0)
+       {
+           System.exit(0);
+       }
+    }//GEN-LAST:event_SalirActionPerformed
+
+    private void Salir1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Salir1ActionPerformed
+        int r = JOptionPane.showConfirmDialog(null,"Esta seguro?");
+       if(r == 0)
+       {
+           System.exit(0);
+       }
+    }//GEN-LAST:event_Salir1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -332,6 +376,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
